@@ -1,4 +1,5 @@
 const env = require('dotenv').config()
+const chrome = require('chrome-aws-lambda');
 const bodyParser = require('body-parser')
 const scrapedin = require('scrapedin')
 const express = require('express')
