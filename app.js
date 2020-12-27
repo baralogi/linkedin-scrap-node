@@ -10,6 +10,9 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
+// Static files path
+app.use(express.static(__dirname + '/public'))
+
 // router
 app.use('/api/hello', async (req, res) => {
     res.send("hello")
