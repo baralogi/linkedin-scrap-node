@@ -3,7 +3,7 @@
     "env": {},
     "builds": [
         {
-            "src": "app/app.js",
+            "src": "app.js",
             "use": "@vercel/node"
         },
         {
@@ -14,7 +14,7 @@
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "app/app.js"
+            "dest": "app.js"
         },
         {
             "src": "/",
