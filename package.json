@@ -1,0 +1,21 @@
+{
+  "name": "scrapedin-ssembara",
+  "version": "1.0.0",
+  "description": "linkedin scrapp practice",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "ssembara <sembara9090@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "scrapedin": "^1.0.21"
+  }
+}
