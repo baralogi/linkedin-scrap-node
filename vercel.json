@@ -1,6 +1,9 @@
 {
     "version": 2,
-    "env": {},
+    "env": {
+        "LINKEDIN_EMAIL": "sembara9090@gmail.com",
+        "LINKEDIN_PASSWORD": "ikanhiu123B@$"
+    },
     "builds": [
         {
             "src": "app.js",
@@ -14,6 +17,7 @@
     "routes": [
         {
             "src": "/api/(.*)",
+            "methods": ["POST", "GET"],
             "dest": "app.js"
         },
         {
