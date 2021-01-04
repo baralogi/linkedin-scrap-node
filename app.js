@@ -14,8 +14,12 @@ app.use(bodyParser.json())
 app.use(express.static(__dirname + '/public'))
 
 // router
-app.use('/api/hello', async (req, res) => {
-    res.send("hello")
+app.get('/', async (req, res) => {
+    res.send({ greeting: "hello"})
+})
+
+app.get('/api/hello', async (req, res) => {
+    res.send({ greeting: "hello"})
 })
 
 app.post('/api/linkedin', async (req, res) => {
